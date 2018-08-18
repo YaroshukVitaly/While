@@ -11,6 +11,7 @@ public class Main {
             if (scanner.hasNextInt()){
                 int a = scanner.nextInt();
                 System.out.println("Круто!!!" + a);
+                break;
             }else {
                 System.out.println("Ошибка! Попробуй еще!");
                 scanner.next();
