@@ -1,17 +1,22 @@
 package by.yaroshuk;
 
+import java.util.Scanner;
+
 public class Main {
 
     public static void main(String[] args) {
-        int i = 0;
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите число!");
         while (true){
-            System.out.println(i);
-            i++;
-            if (i >= 8){
-            break;
+            if (scanner.hasNextInt()){
+                int a = scanner.nextInt();
+                System.out.println("Круто!!!" + a);
+            }else {
+                System.out.println("Ошибка! Попробуй еще!");
+                scanner.next();
             }
         }
-        System.out.println("i = " + i);
+
 
     }
 
